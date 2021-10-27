@@ -7,10 +7,10 @@ class Calender:
         self.window.geometry('250x240')
         self.window.title("Calender")
 
-        # Initialisation des composants
+        # Component initialization
         self.frame =  Frame(self.window)
 
-        # Creation des composants
+        # Creation of components
         self.labels()
         self.frame.pack(pady=20)
         self.entry()
@@ -40,6 +40,6 @@ class Calender:
         calender_label = Label(calender_window, text=calender, font=('Courrier', 16), relief='solid')
         calender_label.pack()
 
-# Afficher
+# Display
 c = Calender()
 c.window.mainloop()
