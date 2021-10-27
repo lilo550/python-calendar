@@ -36,7 +36,7 @@ class Calender:
     def show_calender(self):
         calender = calendar(self.year.get())
         calender_window = Tk()
-        calender_window.title("Calender for the year")
+        calender_window.title("Calender for the year " + str(self.year.get())
         calender_label = Label(calender_window, text=calender, font=('Courrier', 16), relief='solid')
         calender_label.pack()
 
